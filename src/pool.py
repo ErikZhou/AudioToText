@@ -13,7 +13,10 @@ def long_time_task(index, filename):
     # python audio_to_text.py ~/data/split/202p01.mp3 -o 0.txt
     txt = filename + '.txt'
     #os.chdir('./')
-    os.system('python audio_to_text.py ' + filename + ' -o ' + txt)
+
+    cmd = 'python3 audio_to_text.py ' + filename + ' -o ' + txt
+    print('cmd',cmd)
+    os.system(cmd)
     end = time.time()
     print('Task %s runs %0.2f seconds.' % (index, (end - start)))
 
