@@ -44,8 +44,10 @@ def run(filepath):
     p.join()
     print('All subprocesses done.')
 
-
+def usage():
+    print('python3 pool.py filepath')
 if __name__ == '__main__':
+    usage()
     filepath = sys.argv[1]
     print('filepath',filepath)
     run(filepath)
