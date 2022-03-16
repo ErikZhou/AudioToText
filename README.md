@@ -67,7 +67,7 @@ height. I'm smaller than the bearded dwarves. Puppies have no beards.
 
 Run the following command to install the dependencies:
 
-    $ pip install -r requirements
+    $ pip install -r requirements.txt
 
 ## Usage
 
